@@ -6,9 +6,9 @@ error_reporting(0);
   
  // configuration
  
-$email_it_to = "your_own_email_address@some_domain.com";
+$email_it_to = "contacto@grupoinmodus.cl";
 
-$error_message = "Please complete the form first";
+$error_message = "Por favor completa el formulario de nuevo!";
 
 $rnd=$_POST['rnd'];
 $name=$_POST['name'];
@@ -26,8 +26,8 @@ if(!isset($rnd) || !isset($name) || !isset($email) || !isset($subject) || !isset
 $subject = stripslashes($subject);
 $email_from = $email;
 
-$email_message = "Message submitted by '".stripslashes($name)."', email:".$email_from;
-$email_message .=" on ".date("d/m/Y")."\n\n";
+$email_message = "Mensaje enviado por '".stripslashes($name)."', email:".$email_from;
+$email_message .=" el ".date("d/m/Y")."\n\n";
 $email_message .= stripslashes($body);
 $email_message .="\n\n";
 

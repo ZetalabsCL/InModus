@@ -8,7 +8,7 @@ error_reporting(0);
  
 $email_it_to = "your_own_email_address@some_domain.com";
 
-$error_message = "Please complete the form first";
+$error_message = "Por favor completa el formulario primero";
 
 $rnd=$_POST['rnd'];
 $name=$_POST['name'];
@@ -25,8 +25,8 @@ if(!isset($rnd) || !isset($name) || !isset($email) || !isset($subject) ) {
 $subject = stripslashes($subject);
 $email_from = $email;
 
-$email_message = "Message submitted by ".stripslashes($name)." ".stripslashes($name_s).", phone nr:".stripslashes($subject);
-$email_message .=" on ".date("d/m/Y")."\n\n";
+$email_message = "Mensaje enviado por ".stripslashes($name)." ".stripslashes($name_s).", Nº de Telefono:".stripslashes($subject);
+$email_message .=" el ".date("d/m/Y")."\n\n";
 $email_message .="\n\n";
 
 // Always set content-type when sending HTML email

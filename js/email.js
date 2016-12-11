@@ -198,7 +198,7 @@ function check_values() {
 	 if($j('#contactform #name').val()=='') {
 	 	var hasClass=$j('#contactform #name').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Please enter your name</label>');
+	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Por favor ingresa tu nombre</label>');
 			$j('#contactform #name').focus();
 			//return false;
 			errors++;
@@ -210,7 +210,7 @@ function check_values() {
 		if(validate_email($j('#contactform #email').val())==false ) {
 		var hasClass=$j('#contactform #email').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #email').parent().append('<label for="contactname" generated="true" class="error">Please enter a valid email address</label>');	
+	 	    $j('#contactform #email').parent().append('<label for="contactname" generated="true" class="error">Por favor ingresa un E-Mail v&aacute;lido</label>');	
 			$j('#contactform #email').focus();
 			//return false;
 			errors++;
@@ -223,7 +223,7 @@ function check_values() {
 		if($j('#contactform #subject').val()==''){
 		var hasClass=$j('#contactform #subject').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">You need to enter a subject!</label>');	
+	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">Necesitas ingresar el asunto del mensaje</label>');	
 			$j('#contactform #subject').focus();
 			//return false;
 			errors++;
@@ -235,7 +235,7 @@ function check_values() {
 		if($j('#contactform #body').val()==''){
 		var hasClass=$j('#contactform #body').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #body').parent().append('<label for="contactname" generated="true" class="error">You need to enter a message!</label>');	
+	 	    $j('#contactform #body').parent().append('<label for="contactname" generated="true" class="error">Necesitas agregar un mensaje antes de enviar.</label>');	
 			$j('#contactform #body').focus();
 			//return false;
 			errors++;
@@ -247,7 +247,7 @@ function check_values() {
 
 	if(errors==0) {
 			document.getElementById("submit").disabled=true;
-			document.getElementById("submit").value='Please Wait..';
+			document.getElementById("submit").value='Por Favor espere..';
 			sendRequest();
 	}
 }
@@ -281,7 +281,7 @@ function check_values_loans() {
 	 if($j('#contactform #name').val()=='') {
 	 	var hasClass=$j('#contactform #name').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Please enter your first name</label>');
+	 	    $j('#contactform #name').parent().append('<label for="contactname" generated="true" class="error">Por favor ingresa tu nombre</label>');
 			$j('#contactform #name').focus();
 			//return false;
 			errors++;
@@ -294,7 +294,7 @@ function check_values_loans() {
 		if($j('#contactform #subject').val()==''){
 		var hasClass=$j('#contactform #subject').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">You need to enter a subject!</label>');	
+	 	    $j('#contactform #subject').parent().append('<label for="contactname" generated="true" class="error">Por favor ingresa el asunto</label>');	
 			$j('#contactform #subject').focus();
 			//return false;
 			errors++;
@@ -306,7 +306,7 @@ function check_values_loans() {
 		if($j('#contactform #name_s').val()==''){
 		var hasClass=$j('#contactform #name_s').parent().find(".error").hasClass("error");
 	 	if(!hasClass)
-	 	    $j('#contactform #name_s').parent().append('<label for="contactname" generated="true" class="error">You need to enter your last name!</label>');	
+	 	    $j('#contactform #name_s').parent().append('<label for="contactname" generated="true" class="error">Debes ingresar tu apellido</label>');	
 			$j('#contactform #name_s').focus();
 			//return false;
 			errors++;
@@ -318,7 +318,7 @@ function check_values_loans() {
 
 	if(errors==0) {
 			document.getElementById("submit").disabled=true;
-			document.getElementById("submit").value='Please Wait..';
+			document.getElementById("submit").value='Por favor espere..';
 			sendRequest_loans();
 	}
 }
