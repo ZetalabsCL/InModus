@@ -43,7 +43,7 @@ function sendRequest() {
 	catch(e){}
 	finally{
 	jQuery('#contactform').slideUp("slow").hide();
-	jQuery('#contactWrapper').append('<div class="success"><h4>Email Successfully Sent!</h4><br><p>Thank you for using our contact form <strong>'+decodeURIComponent(name)+'</strong>! Your email was successfully sent and we&#39;ll be in touch with you soon.</p></div>');
+	jQuery('#contactWrapper').append('<div class="success"><h4>Email enviado correctamente!</h4><br><p>Muchas gracias por utilizar nuestro formulario de contacto <strong>'+decodeURIComponent(name)+'</strong>! Su correo fue correctamente enviado y nos contacteremos en breve con usted.</p><p>Tambien, si lo prefiere, <b>puede llamarnos al telefono: 22 671 5854</b> en <i>horario de oficina de Lunes a Viernes</i></p></div>');
 	}
 }
 function sendRequest_booking() {
